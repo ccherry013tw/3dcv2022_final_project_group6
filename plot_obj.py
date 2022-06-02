@@ -147,7 +147,6 @@ def filter_align_points(all_marks):
         idx += 1
 
     use_marks = np.array(use_marks)
-    print(use_marks)
 
     return use_marks
 
