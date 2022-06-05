@@ -53,7 +53,7 @@ def estimateRT(object_points, face_points):
     trans_centroid = np.average(trans_points, axis=0)
 
     t = face_centroid - trans_centroid
-    estimated_points = trans_points @ r + t
+    estimated_points = trans_points + t
     
     return estimated_points, r, t
 
